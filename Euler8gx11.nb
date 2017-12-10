@@ -1,0 +1,3743 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    136210,       3734]
+NotebookOptionsPosition[    135837,       3717]
+NotebookOutlinePosition[    136227,       3733]
+CellTagsIndexPosition[    136184,       3730]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"c", "=", 
+    RowBox[{"\[Sqrt]", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "e"}], "+", 
+               RowBox[{"t0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+          "2"], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"rho", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"e", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"Rg", " ", "yg"}], "+", 
+                RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{"rho0", "+", 
+                FractionBox[
+                 RowBox[{
+                  SuperscriptBox["beta", "2"], " ", 
+                  RowBox[{"(", 
+                   RowBox[{"t0", "-", 
+                    FractionBox["e", 
+                    RowBox[{
+                    RowBox[{"cvg", " ", "yg"}], "+", 
+                    RowBox[{"cliq", " ", "yl"}], "+", 
+                    RowBox[{"cvv", " ", "yv"}]}]]}], ")"}]}], 
+                 SuperscriptBox["cl", "2"]]}], ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{
+                    SuperscriptBox["beta", "2"], " ", 
+                    SuperscriptBox["cl", "2"], " ", 
+                    SuperscriptBox["rho", "2"], " ", 
+                    SuperscriptBox["yl", "2"], " ", 
+                    SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"cvg", " ", "yg"}], "+", 
+                    RowBox[{"cliq", " ", "yl"}], "+", 
+                    RowBox[{"cvv", " ", "yv"}]}], ")"}], "2"]}], ")"}], "/", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", "yg", "+", "yv"}], ")"}]}], 
+                  ")"}]}], "+", 
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{
+                   SuperscriptBox["betag", "2"], " ", 
+                   SuperscriptBox["Rg", "2"], " ", "yg", " ", 
+                   SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    SuperscriptBox["cl", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"rho0", "-", 
+                    RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"cvg", " ", "yg"}], "+", 
+                    RowBox[{"cliq", " ", "yl"}], "+", 
+                    RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["beta", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "e"}], "+", 
+                    RowBox[{"t0", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"cvg", " ", "yg"}], "+", 
+                    RowBox[{"cliq", " ", "yl"}], "+", 
+                    RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}],
+                     "2"]}], ")"}], "/", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   SuperscriptBox["clg", "2"], " ", 
+                   SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Rg", " ", "yg"}], "+", 
+                    RowBox[{"Rv", " ", "yv"}]}], ")"}], "2"]}], ")"}]}], "+", 
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{
+                   SuperscriptBox["betav", "2"], " ", 
+                   SuperscriptBox["Rv", "2"], " ", "yv", " ", 
+                   SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    SuperscriptBox["cl", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"rho0", "-", 
+                    RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"cvg", " ", "yg"}], "+", 
+                    RowBox[{"cliq", " ", "yl"}], "+", 
+                    RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+                    RowBox[{
+                    SuperscriptBox["beta", "2"], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "e"}], "+", 
+                    RowBox[{"t0", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"cvg", " ", "yg"}], "+", 
+                    RowBox[{"cliq", " ", "yl"}], "+", 
+                    RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}],
+                     "2"]}], ")"}], "/", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   SuperscriptBox["clv", "2"], " ", 
+                   SuperscriptBox[
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Rg", " ", "yg"}], "+", 
+                    RowBox[{"Rv", " ", "yv"}]}], ")"}], "2"]}], ")"}]}]}], 
+               ")"}]}], ")"}], "/", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{"rho0", "-", 
+                RowBox[{"rho", " ", "yl"}], "+", 
+                FractionBox[
+                 RowBox[{
+                  SuperscriptBox["beta", "2"], " ", 
+                  RowBox[{"(", 
+                   RowBox[{"t0", "-", 
+                    FractionBox["e", 
+                    RowBox[{
+                    RowBox[{"cvg", " ", "yg"}], "+", 
+                    RowBox[{"cliq", " ", "yl"}], "+", 
+                    RowBox[{"cvv", " ", "yv"}]}]]}], ")"}]}], 
+                 SuperscriptBox["cl", "2"]]}], ")"}], " ", 
+              SuperscriptBox[
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{
+                  SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"cvg", " ", "yg"}], "+", 
+                    RowBox[{"cliq", " ", "yl"}], "+", 
+                    RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+                 RowBox[{
+                  SuperscriptBox["beta", "2"], " ", 
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"-", "e"}], "+", 
+                    RowBox[{"t0", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"cvg", " ", "yg"}], "+", 
+                    RowBox[{"cliq", " ", "yl"}], "+", 
+                    RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}],
+                "2"]}], ")"}]}]}], ")"}]}], ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{"rho", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"cvg", " ", "yg"}], "+", 
+           RowBox[{"cliq", " ", "yl"}], "+", 
+           RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", 
+            FractionBox[
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", 
+              SuperscriptBox["rho", "2"], " ", 
+              SuperscriptBox["yl", "2"], " ", 
+              SuperscriptBox[
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}], "2"]}], 
+             RowBox[{
+              RowBox[{"-", "1"}], "+", "yg", "+", "yv"}]]}], "+", 
+           RowBox[{
+            FractionBox["1", 
+             RowBox[{
+              SuperscriptBox["clg", "2"], " ", 
+              SuperscriptBox[
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"Rg", " ", "yg"}], "+", 
+                 RowBox[{"Rv", " ", "yv"}]}], ")"}], "2"]}]], 
+            SuperscriptBox["Rg", "2"], " ", "yg", " ", 
+            SuperscriptBox[
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                SuperscriptBox["cl", "2"], " ", 
+                RowBox[{"(", 
+                 RowBox[{"rho0", "-", 
+                  RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+               RowBox[{
+                SuperscriptBox["beta", "2"], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"-", "e"}], "+", 
+                  RowBox[{"t0", " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"cvg", " ", "yg"}], "+", 
+                    RowBox[{"cliq", " ", "yl"}], "+", 
+                    RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}],
+              "2"]}], "+", 
+           RowBox[{
+            FractionBox["1", 
+             RowBox[{
+              SuperscriptBox["clv", "2"], " ", 
+              SuperscriptBox[
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"Rg", " ", "yg"}], "+", 
+                 RowBox[{"Rv", " ", "yv"}]}], ")"}], "2"]}]], 
+            SuperscriptBox["Rv", "2"], " ", "yv", " ", 
+            SuperscriptBox[
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                SuperscriptBox["cl", "2"], " ", 
+                RowBox[{"(", 
+                 RowBox[{"rho0", "-", 
+                  RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+               RowBox[{
+                SuperscriptBox["beta", "2"], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"-", "e"}], "+", 
+                  RowBox[{"t0", " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"cvg", " ", "yg"}], "+", 
+                    RowBox[{"cliq", " ", "yl"}], "+", 
+                    RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}],
+              "2"]}]}], ")"}]}], ")"}]}], ")"}]}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"lem1", "=", 
+   RowBox[{"u", "-", "c"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"lem2", "=", "u"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"lem3", "=", "u"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"lem4", "=", "u"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"lem5", "=", 
+    RowBox[{"u", "+", "c"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AA11", "=", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AA12", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AA13", "=", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AA14", "=", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"AA15", "=", "0"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AA21", "=", 
+   RowBox[{
+    FractionBox["1", "2"], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", "2"}], " ", 
+       SuperscriptBox["u", "2"]}], "-", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"2", " ", "e", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Rg", " ", "yg"}], "+", 
+           RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["cl", "2"]}], " ", "rho0", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"e", "-", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"cvg", " ", "yg"}], "+", 
+           RowBox[{"cliq", " ", "yl"}], "+", 
+           RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["cl", "2"]}], " ", 
+            RowBox[{"(", 
+             RowBox[{"rho0", "-", 
+              RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"e", "-", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}]}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"2", " ", "e"}], "+", 
+           SuperscriptBox["u", "2"]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Rg", " ", "yg"}], "+", 
+           RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["cl", "2"]}], " ", "rho0", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"e", "-", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"cvg", " ", "yg"}], "+", 
+           RowBox[{"cliq", " ", "yl"}], "+", 
+           RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["cl", "2"]}], " ", 
+            RowBox[{"(", 
+             RowBox[{"rho0", "-", 
+              RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"e", "-", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}]}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"2", " ", "cliq", " ", "e", " ", "yl", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Rg", " ", "yg"}], "+", 
+           RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "e"}], "+", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"cvg", " ", "yg"}], "+", 
+            RowBox[{"cliq", " ", "yl"}], "+", 
+            RowBox[{"cvv", " ", "yv"}]}], ")"}], "2"], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["cl", "2"]}], " ", 
+            RowBox[{"(", 
+             RowBox[{"rho0", "-", 
+              RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"e", "-", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}]}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"e", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Rg", " ", "yg"}], "+", 
+           RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "2"}], " ", 
+            SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"2", " ", "cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"2", " ", "e"}], "+", 
+              SuperscriptBox["u", "2"], "-", 
+              RowBox[{"2", " ", "t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"2", " ", "cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"cvg", " ", "yg"}], "+", 
+           RowBox[{"cliq", " ", "yl"}], "+", 
+           RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["cl", "2"]}], " ", 
+            RowBox[{"(", 
+             RowBox[{"rho0", "-", 
+              RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"e", "-", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}]}], "-", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"e", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Rg", " ", "yg"}], "+", 
+           RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["cl", "2"]}], " ", "rho0", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"e", "-", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+         " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "2"}], " ", 
+            SuperscriptBox["cl", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cliq", " ", "yl", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"2", " ", "rho0"}], "-", 
+                 RowBox[{"3", " ", "rho", " ", "yl"}]}], ")"}]}], "+", 
+              RowBox[{"cvg", " ", "yg", " ", 
+               RowBox[{"(", 
+                RowBox[{"rho0", "-", 
+                 RowBox[{"2", " ", "rho", " ", "yl"}]}], ")"}]}], "+", 
+              RowBox[{"cvv", " ", 
+               RowBox[{"(", 
+                RowBox[{"rho0", "-", 
+                 RowBox[{"2", " ", "rho", " ", "yl"}]}], ")"}], " ", "yv"}]}],
+              ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"2", " ", "e"}], "+", 
+              SuperscriptBox["u", "2"], "-", 
+              RowBox[{"2", " ", "t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"2", " ", "cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"cvg", " ", "yg"}], "+", 
+           RowBox[{"cliq", " ", "yl"}], "+", 
+           RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["cl", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{"rho0", "-", 
+               RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "e"}], "+", 
+               RowBox[{"t0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+          "2"]}], ")"}]}]}], ")"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AA22", "=", 
+   RowBox[{"u", " ", 
+    RowBox[{"(", 
+     RowBox[{"2", "-", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox["beta", "2"], " ", "e", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Rg", " ", "yg"}], "+", 
+           RowBox[{"Rv", " ", "yv"}]}], ")"}]}], ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"cvg", " ", "yg"}], "+", 
+           RowBox[{"cliq", " ", "yl"}], "+", 
+           RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["cl", "2"]}], " ", 
+            RowBox[{"(", 
+             RowBox[{"rho0", "-", 
+              RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"e", "-", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}]}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Rg", " ", "yg"}], "+", 
+           RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "e"}], "+", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"cvg", " ", "yg"}], "+", 
+           RowBox[{"cliq", " ", "yl"}], "+", 
+           RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["cl", "2"]}], " ", 
+            RowBox[{"(", 
+             RowBox[{"rho0", "-", 
+              RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"e", "-", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}]}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox["beta", "2"], " ", "e", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Rg", " ", "yg"}], "+", 
+           RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["cl", "2"]}], " ", "rho0", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"e", "-", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"cvg", " ", "yg"}], "+", 
+           RowBox[{"cliq", " ", "yl"}], "+", 
+           RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["cl", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{"rho0", "-", 
+               RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "e"}], "+", 
+               RowBox[{"t0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+          "2"]}], ")"}]}]}], ")"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AA23", "=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"Rg", " ", "yg"}], "+", 
+        RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["cl", "4"], " ", "rho0", " ", 
+         RowBox[{"(", 
+          RowBox[{"rho0", "-", 
+           RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"cvg", " ", "yg"}], "+", 
+            RowBox[{"cliq", " ", "yl"}], "+", 
+            RowBox[{"cvv", " ", "yv"}]}], ")"}], "2"]}], "+", 
+        RowBox[{
+         SuperscriptBox["beta", "4"], " ", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"e", "-", 
+            RowBox[{"t0", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}], "2"]}], "-", 
+        RowBox[{
+         SuperscriptBox["beta", "2"], " ", 
+         SuperscriptBox["cl", "2"], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"cvg", " ", "yg"}], "+", 
+           RowBox[{"cliq", " ", "yl"}], "+", 
+           RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"2", " ", "e", " ", 
+            RowBox[{"(", 
+             RowBox[{"rho0", "-", 
+              RowBox[{"rho", " ", "yl"}]}], ")"}]}], "-", 
+           RowBox[{"t0", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"2", " ", "rho0"}], "-", 
+              RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+     ")"}], "/", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"cvg", " ", "yg"}], "+", 
+        RowBox[{"cliq", " ", "yl"}], "+", 
+        RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          SuperscriptBox["cl", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{"rho0", "-", 
+            RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"cvg", " ", "yg"}], "+", 
+            RowBox[{"cliq", " ", "yl"}], "+", 
+            RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+         RowBox[{
+          SuperscriptBox["beta", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", "e"}], "+", 
+            RowBox[{"t0", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+       "2"]}], ")"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AA24", "=", 
+   RowBox[{"-", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"e", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"cvg", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", "rho0"}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", "t0"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"cvg", " ", "yg"}], "+", 
+             RowBox[{"cliq", " ", "yl"}], "+", 
+             RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Rg", " ", "yg"}], "+", 
+             RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "rho0"}], "+", 
+                RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"e", "-", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], 
+            ")"}]}], "-", 
+          RowBox[{"cvg", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"-", 
+               SuperscriptBox["beta", "2"]}], " ", "t0"}], "+", 
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "rho0"}], "+", 
+                RowBox[{"rho", " ", "yl"}]}], ")"}]}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"cvg", " ", "yg"}], "+", 
+             RowBox[{"cliq", " ", "yl"}], "+", 
+             RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Rg", " ", "yg"}], "+", 
+             RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "e"}], "+", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], 
+            ")"}]}], "+", 
+          RowBox[{"Rg", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"cvg", " ", "yg"}], "+", 
+             RowBox[{"cliq", " ", "yl"}], "+", 
+             RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "rho0"}], "+", 
+                RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"e", "-", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+           " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "e"}], "+", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], 
+            ")"}]}], "-", 
+          RowBox[{"cvg", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Rg", " ", "yg"}], "+", 
+             RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "rho0"}], "+", 
+                RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"e", "-", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+           " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "e"}], "+", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], 
+            ")"}]}]}], ")"}]}], ")"}], "/", 
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"cvg", " ", "yg"}], "+", 
+           RowBox[{"cliq", " ", "yl"}], "+", 
+           RowBox[{"cvv", " ", "yv"}]}], ")"}], "2"], " ", 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            SuperscriptBox["cl", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "rho0"}], "+", 
+              RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"e", "-", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+         "2"]}], ")"}]}], ")"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AA25", "=", 
+   RowBox[{"-", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"e", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"cvv", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", "rho0"}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", "t0"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"cvg", " ", "yg"}], "+", 
+             RowBox[{"cliq", " ", "yl"}], "+", 
+             RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Rg", " ", "yg"}], "+", 
+             RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "rho0"}], "+", 
+                RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"e", "-", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], 
+            ")"}]}], "-", 
+          RowBox[{"cvv", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"-", 
+               SuperscriptBox["beta", "2"]}], " ", "t0"}], "+", 
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "rho0"}], "+", 
+                RowBox[{"rho", " ", "yl"}]}], ")"}]}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"cvg", " ", "yg"}], "+", 
+             RowBox[{"cliq", " ", "yl"}], "+", 
+             RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Rg", " ", "yg"}], "+", 
+             RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "e"}], "+", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], 
+            ")"}]}], "+", 
+          RowBox[{"Rv", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"cvg", " ", "yg"}], "+", 
+             RowBox[{"cliq", " ", "yl"}], "+", 
+             RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "rho0"}], "+", 
+                RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"e", "-", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+           " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "e"}], "+", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], 
+            ")"}]}], "-", 
+          RowBox[{"cvv", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Rg", " ", "yg"}], "+", 
+             RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "rho0"}], "+", 
+                RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"e", "-", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+           " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "e"}], "+", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], 
+            ")"}]}]}], ")"}]}], ")"}], "/", 
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"cvg", " ", "yg"}], "+", 
+           RowBox[{"cliq", " ", "yl"}], "+", 
+           RowBox[{"cvv", " ", "yv"}]}], ")"}], "2"], " ", 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            SuperscriptBox["cl", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "rho0"}], "+", 
+              RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"e", "-", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+         "2"]}], ")"}]}], ")"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AA31", "=", 
+   RowBox[{
+    FractionBox["1", "2"], " ", "u", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"-", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"2", " ", "e", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Rg", " ", "yg"}], "+", 
+             RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"-", 
+               SuperscriptBox["cl", "2"]}], " ", "rho0", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"e", "-", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], 
+            ")"}]}], ")"}], "/", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"cvg", " ", "yg"}], "+", 
+             RowBox[{"cliq", " ", "yl"}], "+", 
+             RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"-", 
+               SuperscriptBox["cl", "2"]}], " ", 
+              RowBox[{"(", 
+               RowBox[{"rho0", "-", 
+                RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"e", "-", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], 
+            ")"}]}], ")"}]}], ")"}]}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"2", " ", "e"}], "+", 
+           SuperscriptBox["u", "2"]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Rg", " ", "yg"}], "+", 
+           RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["cl", "2"]}], " ", "rho0", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"e", "-", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"cvg", " ", "yg"}], "+", 
+           RowBox[{"cliq", " ", "yl"}], "+", 
+           RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["cl", "2"]}], " ", 
+            RowBox[{"(", 
+             RowBox[{"rho0", "-", 
+              RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"e", "-", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}]}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"2", " ", "cliq", " ", "e", " ", "yl", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Rg", " ", "yg"}], "+", 
+           RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "e"}], "+", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"cvg", " ", "yg"}], "+", 
+            RowBox[{"cliq", " ", "yl"}], "+", 
+            RowBox[{"cvv", " ", "yv"}]}], ")"}], "2"], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["cl", "2"]}], " ", 
+            RowBox[{"(", 
+             RowBox[{"rho0", "-", 
+              RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"e", "-", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}]}], "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"e", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Rg", " ", "yg"}], "+", 
+           RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "2"}], " ", 
+            SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"2", " ", "cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"2", " ", "e"}], "+", 
+              SuperscriptBox["u", "2"], "-", 
+              RowBox[{"2", " ", "t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"2", " ", "cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"cvg", " ", "yg"}], "+", 
+           RowBox[{"cliq", " ", "yl"}], "+", 
+           RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["cl", "2"]}], " ", 
+            RowBox[{"(", 
+             RowBox[{"rho0", "-", 
+              RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"e", "-", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}]}], "-", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"e", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Rg", " ", "yg"}], "+", 
+           RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["cl", "2"]}], " ", "rho0", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"e", "-", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+         " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "2"}], " ", 
+            SuperscriptBox["cl", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cliq", " ", "yl", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"2", " ", "rho0"}], "-", 
+                 RowBox[{"3", " ", "rho", " ", "yl"}]}], ")"}]}], "+", 
+              RowBox[{"cvg", " ", "yg", " ", 
+               RowBox[{"(", 
+                RowBox[{"rho0", "-", 
+                 RowBox[{"2", " ", "rho", " ", "yl"}]}], ")"}]}], "+", 
+              RowBox[{"cvv", " ", 
+               RowBox[{"(", 
+                RowBox[{"rho0", "-", 
+                 RowBox[{"2", " ", "rho", " ", "yl"}]}], ")"}], " ", "yv"}]}],
+              ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"2", " ", "e"}], "+", 
+              SuperscriptBox["u", "2"], "-", 
+              RowBox[{"2", " ", "t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"2", " ", "cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"cvg", " ", "yg"}], "+", 
+           RowBox[{"cliq", " ", "yl"}], "+", 
+           RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["cl", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{"rho0", "-", 
+               RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "e"}], "+", 
+               RowBox[{"t0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+          "2"]}], ")"}]}], "-", 
+      RowBox[{"2", " ", 
+       RowBox[{"(", 
+        RowBox[{"e", "+", 
+         FractionBox[
+          SuperscriptBox["u", "2"], "2"], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"e", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"Rg", " ", "yg"}], "+", 
+              RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"-", 
+                SuperscriptBox["cl", "2"]}], " ", "rho0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+              RowBox[{
+               SuperscriptBox["beta", "2"], " ", 
+               RowBox[{"(", 
+                RowBox[{"e", "-", 
+                 RowBox[{"t0", " ", 
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"cvg", " ", "yg"}], "+", 
+                    RowBox[{"cliq", " ", "yl"}], "+", 
+                    RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], 
+             ")"}]}], ")"}], "/", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"-", 
+                SuperscriptBox["cl", "2"]}], " ", 
+               RowBox[{"(", 
+                RowBox[{"rho0", "-", 
+                 RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+              RowBox[{
+               SuperscriptBox["beta", "2"], " ", 
+               RowBox[{"(", 
+                RowBox[{"e", "-", 
+                 RowBox[{"t0", " ", 
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"cvg", " ", "yg"}], "+", 
+                    RowBox[{"cliq", " ", "yl"}], "+", 
+                    RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], 
+             ")"}]}], ")"}]}]}], ")"}]}]}], ")"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AA32", "=", 
+   RowBox[{"e", "+", 
+    FractionBox[
+     SuperscriptBox["u", "2"], "2"], "+", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"e", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"Rg", " ", "yg"}], "+", 
+         RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", 
+           SuperscriptBox["cl", "2"]}], " ", "rho0", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"cvg", " ", "yg"}], "+", 
+            RowBox[{"cliq", " ", "yl"}], "+", 
+            RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+         RowBox[{
+          SuperscriptBox["beta", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{"e", "-", 
+            RowBox[{"t0", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+      ")"}], "/", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"cvg", " ", "yg"}], "+", 
+         RowBox[{"cliq", " ", "yl"}], "+", 
+         RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", 
+           SuperscriptBox["cl", "2"]}], " ", 
+          RowBox[{"(", 
+           RowBox[{"rho0", "-", 
+            RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"cvg", " ", "yg"}], "+", 
+            RowBox[{"cliq", " ", "yl"}], "+", 
+            RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+         RowBox[{
+          SuperscriptBox["beta", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{"e", "-", 
+            RowBox[{"t0", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+      ")"}]}], "-", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox["u", "2"], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"Rg", " ", "yg"}], "+", 
+         RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          SuperscriptBox["cl", "4"], " ", "rho0", " ", 
+          RowBox[{"(", 
+           RowBox[{"rho0", "-", 
+            RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"cvg", " ", "yg"}], "+", 
+             RowBox[{"cliq", " ", "yl"}], "+", 
+             RowBox[{"cvv", " ", "yv"}]}], ")"}], "2"]}], "+", 
+         RowBox[{
+          SuperscriptBox["beta", "4"], " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{"e", "-", 
+             RowBox[{"t0", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}], "2"]}], "-", 
+         RowBox[{
+          SuperscriptBox["beta", "2"], " ", 
+          SuperscriptBox["cl", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"cvg", " ", "yg"}], "+", 
+            RowBox[{"cliq", " ", "yl"}], "+", 
+            RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"2", " ", "e", " ", 
+             RowBox[{"(", 
+              RowBox[{"rho0", "-", 
+               RowBox[{"rho", " ", "yl"}]}], ")"}]}], "-", 
+            RowBox[{"t0", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"2", " ", "rho0"}], "-", 
+               RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+      ")"}], "/", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"cvg", " ", "yg"}], "+", 
+         RowBox[{"cliq", " ", "yl"}], "+", 
+         RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           SuperscriptBox["cl", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{"rho0", "-", 
+             RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"cvg", " ", "yg"}], "+", 
+             RowBox[{"cliq", " ", "yl"}], "+", 
+             RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+          RowBox[{
+           SuperscriptBox["beta", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "e"}], "+", 
+             RowBox[{"t0", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+        "2"]}], ")"}]}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AA33", "=", 
+   RowBox[{"u", " ", 
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox["beta", "2"], " ", "e", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Rg", " ", "yg"}], "+", 
+           RowBox[{"Rv", " ", "yv"}]}], ")"}]}], ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"cvg", " ", "yg"}], "+", 
+           RowBox[{"cliq", " ", "yl"}], "+", 
+           RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["cl", "2"]}], " ", 
+            RowBox[{"(", 
+             RowBox[{"rho0", "-", 
+              RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"e", "-", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}]}], "-", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Rg", " ", "yg"}], "+", 
+           RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "e"}], "+", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"cvg", " ", "yg"}], "+", 
+           RowBox[{"cliq", " ", "yl"}], "+", 
+           RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["cl", "2"]}], " ", 
+            RowBox[{"(", 
+             RowBox[{"rho0", "-", 
+              RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"e", "-", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}]}], "-", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox["beta", "2"], " ", "e", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Rg", " ", "yg"}], "+", 
+           RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["cl", "2"]}], " ", "rho0", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"e", "-", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"cvg", " ", "yg"}], "+", 
+           RowBox[{"cliq", " ", "yl"}], "+", 
+           RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["cl", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{"rho0", "-", 
+               RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "e"}], "+", 
+               RowBox[{"t0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+          "2"]}], ")"}]}]}], ")"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AA34", "=", 
+   RowBox[{"-", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"e", " ", "u", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"cvg", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", "rho0"}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", "t0"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"cvg", " ", "yg"}], "+", 
+             RowBox[{"cliq", " ", "yl"}], "+", 
+             RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Rg", " ", "yg"}], "+", 
+             RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "rho0"}], "+", 
+                RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"e", "-", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], 
+            ")"}]}], "-", 
+          RowBox[{"cvg", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"-", 
+               SuperscriptBox["beta", "2"]}], " ", "t0"}], "+", 
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "rho0"}], "+", 
+                RowBox[{"rho", " ", "yl"}]}], ")"}]}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"cvg", " ", "yg"}], "+", 
+             RowBox[{"cliq", " ", "yl"}], "+", 
+             RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Rg", " ", "yg"}], "+", 
+             RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "e"}], "+", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], 
+            ")"}]}], "+", 
+          RowBox[{"Rg", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"cvg", " ", "yg"}], "+", 
+             RowBox[{"cliq", " ", "yl"}], "+", 
+             RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "rho0"}], "+", 
+                RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"e", "-", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+           " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "e"}], "+", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], 
+            ")"}]}], "-", 
+          RowBox[{"cvg", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Rg", " ", "yg"}], "+", 
+             RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "rho0"}], "+", 
+                RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"e", "-", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+           " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "e"}], "+", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], 
+            ")"}]}]}], ")"}]}], ")"}], "/", 
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"cvg", " ", "yg"}], "+", 
+           RowBox[{"cliq", " ", "yl"}], "+", 
+           RowBox[{"cvv", " ", "yv"}]}], ")"}], "2"], " ", 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            SuperscriptBox["cl", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "rho0"}], "+", 
+              RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"e", "-", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+         "2"]}], ")"}]}], ")"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AA35", "=", 
+   RowBox[{"-", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"e", " ", "u", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"cvv", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", "rho0"}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", "t0"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"cvg", " ", "yg"}], "+", 
+             RowBox[{"cliq", " ", "yl"}], "+", 
+             RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Rg", " ", "yg"}], "+", 
+             RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "rho0"}], "+", 
+                RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"e", "-", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], 
+            ")"}]}], "-", 
+          RowBox[{"cvv", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"-", 
+               SuperscriptBox["beta", "2"]}], " ", "t0"}], "+", 
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "rho0"}], "+", 
+                RowBox[{"rho", " ", "yl"}]}], ")"}]}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"cvg", " ", "yg"}], "+", 
+             RowBox[{"cliq", " ", "yl"}], "+", 
+             RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Rg", " ", "yg"}], "+", 
+             RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "e"}], "+", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], 
+            ")"}]}], "+", 
+          RowBox[{"Rv", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"cvg", " ", "yg"}], "+", 
+             RowBox[{"cliq", " ", "yl"}], "+", 
+             RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "rho0"}], "+", 
+                RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"e", "-", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+           " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "e"}], "+", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], 
+            ")"}]}], "-", 
+          RowBox[{"cvv", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Rg", " ", "yg"}], "+", 
+             RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "rho0"}], "+", 
+                RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"e", "-", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+           " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "e"}], "+", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], 
+            ")"}]}]}], ")"}]}], ")"}], "/", 
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"cvg", " ", "yg"}], "+", 
+           RowBox[{"cliq", " ", "yl"}], "+", 
+           RowBox[{"cvv", " ", "yv"}]}], ")"}], "2"], " ", 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            SuperscriptBox["cl", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "rho0"}], "+", 
+              RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"e", "-", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+         "2"]}], ")"}]}], ")"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AA41", "=", 
+   RowBox[{
+    RowBox[{"-", "u"}], " ", "yg"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AA42", "=", "yg"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AA43", "=", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AA44", "=", "u"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AA45", "=", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AA51", "=", 
+   RowBox[{
+    RowBox[{"-", "u"}], " ", "yv"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AA52", "=", "yv"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AA53", "=", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AA54", "=", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"AA55", "=", "u"}], ";"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"AA", "=", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"AA11", ",", "AA12", ",", "AA13", ",", "AA14", ",", "AA15"}], 
+       "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"AA21", ",", "AA22", ",", "AA23", ",", "AA24", ",", "AA25"}], 
+       "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"AA31", ",", "AA32", ",", "AA33", ",", "AA34", ",", "AA35"}], 
+       "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"AA41", ",", "AA42", ",", "AA43", ",", "AA44", ",", "AA45"}], 
+       "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"AA51", ",", "AA52", ",", "AA53", ",", "AA54", ",", "AA55"}], 
+       "}"}]}], "}"}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"LemAA1", "=", 
+   RowBox[{"AA", "=", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"AA11", "-", "lem5"}], ",", "AA12", ",", "AA13", ",", "AA14", 
+        ",", "AA15"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"AA21", ",", 
+        RowBox[{"AA22", "-", "lem5"}], ",", "AA23", ",", "AA24", ",", 
+        "AA25"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"AA31", ",", "AA32", ",", 
+        RowBox[{"AA33", "-", "lem5"}], ",", "AA34", ",", "AA35"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"AA41", ",", "AA42", ",", "AA43", ",", 
+        RowBox[{"AA44", "-", "lem5"}], ",", "AA45"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"AA51", ",", "AA52", ",", "AA53", ",", "AA54", ",", 
+        RowBox[{"AA55", "-", "lem5"}]}], "}"}]}], "}"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"LemAA1", ";"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"v1", "=", "1.0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"v2", "=", "0.0"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"v4", "=", "yg"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"v5", "=", "yv"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Eq3", "=", "0.0"}], ";"}], "\n"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"v3", "=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"Eq3", "-", 
+      RowBox[{"v1", "*", "AA31"}], "-", 
+      RowBox[{"v2", "*", "AA32"}], "-", 
+      RowBox[{"v4", "*", "AA34"}], "-", 
+      RowBox[{"v5", "*", "AA35"}]}], ")"}], "/", "AA33"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Simplify", "[", "v3", "]"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.662316598148168*^9, 3.662316600108281*^9}, {
+   3.662316674758583*^9, 3.6623166791408367`*^9}, {3.6623167125827627`*^9, 
+   3.662316778087538*^9}, 3.6623168594872265`*^9, {3.6623168990595074`*^9, 
+   3.662316970285611*^9}, 3.662317057365629*^9, {3.6623170984679976`*^9, 
+   3.662317159477512*^9}, {3.662317232416715*^9, 3.6623173757249737`*^9}, {
+   3.662317429196054*^9, 3.662317435548421*^9}, {3.662317775564012*^9, 
+   3.6623177797162514`*^9}, {3.6623185242451515`*^9, 
+   3.6623185364688563`*^9}, {3.6628363424561415`*^9, 
+   3.6628363595031233`*^9}, {3.6628365403285427`*^9, 3.662836695446481*^9}, 
+   3.6628367335716777`*^9, {3.6628367740430098`*^9, 3.662836804534767*^9}, 
+   3.6628368592959223`*^9, {3.662836927517853*^9, 3.6628369641269627`*^9}, {
+   3.6628370009490843`*^9, 3.6628370070794373`*^9}, {3.662837105399102*^9, 
+   3.6628371262673054`*^9}, 3.662837553345914*^9, {3.66283758469372*^9, 
+   3.6628377412617416`*^9}, 3.6628378947915883`*^9, {3.662838176364812*^9, 
+   3.6628381864933963`*^9}, {3.6628382229804983`*^9, 3.662838234694174*^9}, {
+   3.6628383316027575`*^9, 3.6628383361820216`*^9}, {3.6628384482204766`*^9, 
+   3.662838458430065*^9}, {3.662838495679212*^9, 3.662838500974517*^9}, {
+   3.6628385772319107`*^9, 3.6628385892366023`*^9}, {3.662840139797947*^9, 
+   3.6628401477584057`*^9}, {3.6628401812803373`*^9, 3.662840234169385*^9}, {
+   3.6628402931677847`*^9, 3.6628402937618184`*^9}, 3.662840467320819*^9, {
+   3.662841917703391*^9, 3.6628421020150113`*^9}, {3.662842157988237*^9, 
+   3.662842185391815*^9}, {3.662842241038022*^9, 3.6628422412510347`*^9}, {
+   3.6628423533234916`*^9, 3.662842394953891*^9}, {3.662843261931847*^9, 
+   3.6628433028252034`*^9}, {3.662843333360963*^9, 3.662843335256072*^9}, {
+   3.6628433760754232`*^9, 3.662843385298956*^9}, {3.6628434570230875`*^9, 
+   3.6628434750961294`*^9}, {3.662843558187917*^9, 3.6628436247387514`*^9}, {
+   3.6628436778748136`*^9, 3.6628437055934105`*^9}, {3.6628437435395975`*^9, 
+   3.6628439155415087`*^9}, 3.662844002073495*^9, {3.6628446496678095`*^9, 
+   3.6628446671408157`*^9}, {3.6628447212289324`*^9, 
+   3.6628447529407597`*^9}, {3.662844870635541*^9, 3.6628448816251745`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{"0.`", "\[VeryThinSpace]", "+", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"e", " ", "u", " ", "yg", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"cvg", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["cl", "2"], " ", "rho0"}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", "t0"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"cvg", " ", "yg"}], "+", 
+            RowBox[{"cliq", " ", "yl"}], "+", 
+            RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Rg", " ", "yg"}], "+", 
+            RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["cl", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "rho0"}], "+", 
+               RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{"e", "-", 
+               RowBox[{"t0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}],
+          "-", 
+         RowBox[{"cvg", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", 
+              SuperscriptBox["beta", "2"]}], " ", "t0"}], "+", 
+            RowBox[{
+             SuperscriptBox["cl", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "rho0"}], "+", 
+               RowBox[{"rho", " ", "yl"}]}], ")"}]}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"cvg", " ", "yg"}], "+", 
+            RowBox[{"cliq", " ", "yl"}], "+", 
+            RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Rg", " ", "yg"}], "+", 
+            RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "e"}], "+", 
+               RowBox[{"t0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}],
+          "+", 
+         RowBox[{"Rg", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"cvg", " ", "yg"}], "+", 
+            RowBox[{"cliq", " ", "yl"}], "+", 
+            RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["cl", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "rho0"}], "+", 
+               RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{"e", "-", 
+               RowBox[{"t0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+          " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "e"}], "+", 
+               RowBox[{"t0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}],
+          "-", 
+         RowBox[{"cvg", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Rg", " ", "yg"}], "+", 
+            RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["cl", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "rho0"}], "+", 
+               RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{"e", "-", 
+               RowBox[{"t0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+          " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "e"}], "+", 
+               RowBox[{"t0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], 
+           ")"}]}]}], ")"}]}], ")"}], "/", 
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"cvg", " ", "yg"}], "+", 
+          RowBox[{"cliq", " ", "yl"}], "+", 
+          RowBox[{"cvv", " ", "yv"}]}], ")"}], "2"], " ", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           SuperscriptBox["cl", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "rho0"}], "+", 
+             RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"cvg", " ", "yg"}], "+", 
+             RowBox[{"cliq", " ", "yl"}], "+", 
+             RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+          RowBox[{
+           SuperscriptBox["beta", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{"e", "-", 
+             RowBox[{"t0", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+        "2"]}], ")"}]}], "+", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"e", " ", "u", " ", "yv", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"cvv", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["cl", "2"], " ", "rho0"}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", "t0"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"cvg", " ", "yg"}], "+", 
+            RowBox[{"cliq", " ", "yl"}], "+", 
+            RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Rg", " ", "yg"}], "+", 
+            RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["cl", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "rho0"}], "+", 
+               RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{"e", "-", 
+               RowBox[{"t0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}],
+          "-", 
+         RowBox[{"cvv", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", 
+              SuperscriptBox["beta", "2"]}], " ", "t0"}], "+", 
+            RowBox[{
+             SuperscriptBox["cl", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "rho0"}], "+", 
+               RowBox[{"rho", " ", "yl"}]}], ")"}]}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"cvg", " ", "yg"}], "+", 
+            RowBox[{"cliq", " ", "yl"}], "+", 
+            RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Rg", " ", "yg"}], "+", 
+            RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "e"}], "+", 
+               RowBox[{"t0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}],
+          "+", 
+         RowBox[{"Rv", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"cvg", " ", "yg"}], "+", 
+            RowBox[{"cliq", " ", "yl"}], "+", 
+            RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["cl", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "rho0"}], "+", 
+               RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{"e", "-", 
+               RowBox[{"t0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+          " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "e"}], "+", 
+               RowBox[{"t0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}],
+          "-", 
+         RowBox[{"cvv", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Rg", " ", "yg"}], "+", 
+            RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["cl", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "rho0"}], "+", 
+               RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{"e", "-", 
+               RowBox[{"t0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+          " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "e"}], "+", 
+               RowBox[{"t0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], 
+           ")"}]}]}], ")"}]}], ")"}], "/", 
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"cvg", " ", "yg"}], "+", 
+          RowBox[{"cliq", " ", "yl"}], "+", 
+          RowBox[{"cvv", " ", "yv"}]}], ")"}], "2"], " ", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           SuperscriptBox["cl", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "rho0"}], "+", 
+             RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"cvg", " ", "yg"}], "+", 
+             RowBox[{"cliq", " ", "yl"}], "+", 
+             RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+          RowBox[{
+           SuperscriptBox["beta", "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{"e", "-", 
+             RowBox[{"t0", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+        "2"]}], ")"}]}], "-", 
+    RowBox[{"0.5`", " ", "u", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"2", " ", "e", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"Rg", " ", "yg"}], "+", 
+              RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"-", 
+                SuperscriptBox["cl", "2"]}], " ", "rho0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+              RowBox[{
+               SuperscriptBox["beta", "2"], " ", 
+               RowBox[{"(", 
+                RowBox[{"e", "-", 
+                 RowBox[{"t0", " ", 
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"cvg", " ", "yg"}], "+", 
+                    RowBox[{"cliq", " ", "yl"}], "+", 
+                    RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], 
+             ")"}]}], ")"}], "/", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"-", 
+                SuperscriptBox["cl", "2"]}], " ", 
+               RowBox[{"(", 
+                RowBox[{"rho0", "-", 
+                 RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+              RowBox[{
+               SuperscriptBox["beta", "2"], " ", 
+               RowBox[{"(", 
+                RowBox[{"e", "-", 
+                 RowBox[{"t0", " ", 
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"cvg", " ", "yg"}], "+", 
+                    RowBox[{"cliq", " ", "yl"}], "+", 
+                    RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], 
+             ")"}]}], ")"}]}], ")"}]}], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"2", " ", "e"}], "+", 
+            SuperscriptBox["u", "2"]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Rg", " ", "yg"}], "+", 
+            RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", 
+              SuperscriptBox["cl", "2"]}], " ", "rho0", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{"e", "-", 
+               RowBox[{"t0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}],
+          ")"}], "/", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"cvg", " ", "yg"}], "+", 
+            RowBox[{"cliq", " ", "yl"}], "+", 
+            RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", 
+              SuperscriptBox["cl", "2"]}], " ", 
+             RowBox[{"(", 
+              RowBox[{"rho0", "-", 
+               RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{"e", "-", 
+               RowBox[{"t0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}],
+          ")"}]}], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"2", " ", "cliq", " ", "e", " ", "yl", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Rg", " ", "yg"}], "+", 
+            RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "e"}], "+", 
+               RowBox[{"t0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}],
+          ")"}], "/", 
+        RowBox[{"(", 
+         RowBox[{
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"cvg", " ", "yg"}], "+", 
+             RowBox[{"cliq", " ", "yl"}], "+", 
+             RowBox[{"cvv", " ", "yv"}]}], ")"}], "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", 
+              SuperscriptBox["cl", "2"]}], " ", 
+             RowBox[{"(", 
+              RowBox[{"rho0", "-", 
+               RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{"e", "-", 
+               RowBox[{"t0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}],
+          ")"}]}], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"e", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Rg", " ", "yg"}], "+", 
+            RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", "2"}], " ", 
+             SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"2", " ", "cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"2", " ", "e"}], "+", 
+               SuperscriptBox["u", "2"], "-", 
+               RowBox[{"2", " ", "t0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"2", " ", "cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}],
+          ")"}], "/", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"cvg", " ", "yg"}], "+", 
+            RowBox[{"cliq", " ", "yl"}], "+", 
+            RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", 
+              SuperscriptBox["cl", "2"]}], " ", 
+             RowBox[{"(", 
+              RowBox[{"rho0", "-", 
+               RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{"e", "-", 
+               RowBox[{"t0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}],
+          ")"}]}], "-", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"e", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"Rg", " ", "yg"}], "+", 
+            RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", 
+              SuperscriptBox["cl", "2"]}], " ", "rho0", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{"e", "-", 
+               RowBox[{"t0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+          " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", "2"}], " ", 
+             SuperscriptBox["cl", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cliq", " ", "yl", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"2", " ", "rho0"}], "-", 
+                  RowBox[{"3", " ", "rho", " ", "yl"}]}], ")"}]}], "+", 
+               RowBox[{"cvg", " ", "yg", " ", 
+                RowBox[{"(", 
+                 RowBox[{"rho0", "-", 
+                  RowBox[{"2", " ", "rho", " ", "yl"}]}], ")"}]}], "+", 
+               RowBox[{"cvv", " ", 
+                RowBox[{"(", 
+                 RowBox[{"rho0", "-", 
+                  RowBox[{"2", " ", "rho", " ", "yl"}]}], ")"}], " ", 
+                "yv"}]}], ")"}]}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"2", " ", "e"}], "+", 
+               SuperscriptBox["u", "2"], "-", 
+               RowBox[{"2", " ", "t0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"2", " ", "cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}],
+          ")"}], "/", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"cvg", " ", "yg"}], "+", 
+            RowBox[{"cliq", " ", "yl"}], "+", 
+            RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              SuperscriptBox["cl", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{"rho0", "-", 
+                RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"cvg", " ", "yg"}], "+", 
+                RowBox[{"cliq", " ", "yl"}], "+", 
+                RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["beta", "2"], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "e"}], "+", 
+                RowBox[{"t0", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"cvg", " ", "yg"}], "+", 
+                   RowBox[{"cliq", " ", "yl"}], "+", 
+                   RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+           "2"]}], ")"}]}], "-", 
+       RowBox[{"2", " ", 
+        RowBox[{"(", 
+         RowBox[{"e", "+", 
+          FractionBox[
+           SuperscriptBox["u", "2"], "2"], "+", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"e", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"Rg", " ", "yg"}], "+", 
+               RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"-", 
+                 SuperscriptBox["cl", "2"]}], " ", "rho0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+               RowBox[{
+                SuperscriptBox["beta", "2"], " ", 
+                RowBox[{"(", 
+                 RowBox[{"e", "-", 
+                  RowBox[{"t0", " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"cvg", " ", "yg"}], "+", 
+                    RowBox[{"cliq", " ", "yl"}], "+", 
+                    RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], 
+              ")"}]}], ")"}], "/", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                RowBox[{"-", 
+                 SuperscriptBox["cl", "2"]}], " ", 
+                RowBox[{"(", 
+                 RowBox[{"rho0", "-", 
+                  RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+               RowBox[{
+                SuperscriptBox["beta", "2"], " ", 
+                RowBox[{"(", 
+                 RowBox[{"e", "-", 
+                  RowBox[{"t0", " ", 
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"cvg", " ", "yg"}], "+", 
+                    RowBox[{"cliq", " ", "yl"}], "+", 
+                    RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], 
+              ")"}]}], ")"}]}]}], ")"}]}]}], ")"}]}]}], ")"}], "/", 
+  RowBox[{"(", 
+   RowBox[{"u", " ", 
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox["beta", "2"], " ", "e", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Rg", " ", "yg"}], "+", 
+           RowBox[{"Rv", " ", "yv"}]}], ")"}]}], ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"cvg", " ", "yg"}], "+", 
+           RowBox[{"cliq", " ", "yl"}], "+", 
+           RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["cl", "2"]}], " ", 
+            RowBox[{"(", 
+             RowBox[{"rho0", "-", 
+              RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"e", "-", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}]}], "-", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Rg", " ", "yg"}], "+", 
+           RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            SuperscriptBox["cl", "2"], " ", "rho0", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "e"}], "+", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"cvg", " ", "yg"}], "+", 
+           RowBox[{"cliq", " ", "yl"}], "+", 
+           RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["cl", "2"]}], " ", 
+            RowBox[{"(", 
+             RowBox[{"rho0", "-", 
+              RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"e", "-", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}]}], "-", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox["beta", "2"], " ", "e", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"Rg", " ", "yg"}], "+", 
+           RowBox[{"Rv", " ", "yv"}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox["cl", "2"]}], " ", "rho0", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"cvg", " ", "yg"}], "+", 
+              RowBox[{"cliq", " ", "yl"}], "+", 
+              RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["beta", "2"], " ", 
+            RowBox[{"(", 
+             RowBox[{"e", "-", 
+              RowBox[{"t0", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"cvg", " ", "yg"}], "+", 
+                 RowBox[{"cliq", " ", "yl"}], "+", 
+                 RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"cvg", " ", "yg"}], "+", 
+           RowBox[{"cliq", " ", "yl"}], "+", 
+           RowBox[{"cvv", " ", "yv"}]}], ")"}], " ", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             SuperscriptBox["cl", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{"rho0", "-", 
+               RowBox[{"rho", " ", "yl"}]}], ")"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"cvg", " ", "yg"}], "+", 
+               RowBox[{"cliq", " ", "yl"}], "+", 
+               RowBox[{"cvv", " ", "yv"}]}], ")"}]}], "+", 
+            RowBox[{
+             SuperscriptBox["beta", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"-", "e"}], "+", 
+               RowBox[{"t0", " ", 
+                RowBox[{"(", 
+                 RowBox[{
+                  RowBox[{"cvg", " ", "yg"}], "+", 
+                  RowBox[{"cliq", " ", "yl"}], "+", 
+                  RowBox[{"cvv", " ", "yv"}]}], ")"}]}]}], ")"}]}]}], ")"}], 
+          "2"]}], ")"}]}]}], ")"}]}], ")"}]}]], "Output",
+ CellChangeTimes->{3.6628440278219776`*^9, 3.662844114833992*^9, 
+  3.6628447600511694`*^9, 3.6628448964100256`*^9}]
+}, Open  ]]
+},
+WindowSize->{1024, 685},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+PrintingPageRange->{Automatic, Automatic},
+FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (December 10, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 98174, 2674, 4437, "Input"],
+Cell[98757, 2698, 37064, 1016, 1050, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

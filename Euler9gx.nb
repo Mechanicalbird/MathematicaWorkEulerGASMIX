@@ -1,0 +1,289 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      9823,        280]
+NotebookOptionsPosition[      9381,        261]
+NotebookOutlinePosition[      9728,        276]
+CellTagsIndexPosition[      9685,        273]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"v2", "=", 
+    RowBox[{"-", 
+     FractionBox[
+      RowBox[{"0.5`", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "2.`"}], " ", "e", " ", "gama", " ", "u"}], "+", 
+         RowBox[{"2.`", " ", "e", " ", 
+          SuperscriptBox["gama", "2"], " ", "u"}], "-", 
+         RowBox[{"3.`", " ", "c", " ", "rho", " ", 
+          SuperscriptBox["u", "2"]}], "+", 
+         RowBox[{"1.`", " ", "c", " ", "gama", " ", "rho", " ", 
+          SuperscriptBox["u", "2"]}], "+", 
+         RowBox[{"1.`", " ", "rho", " ", 
+          SuperscriptBox["u", "3"]}], "-", 
+         RowBox[{"1.`", " ", 
+          SuperscriptBox["gama", "2"], " ", "rho", " ", 
+          SuperscriptBox["u", "3"]}]}], ")"}]}], 
+      RowBox[{
+       RowBox[{"1.`", " ", "e", " ", "gama"}], "-", 
+       RowBox[{"1.`", " ", "e", " ", 
+        SuperscriptBox["gama", "2"]}], "+", 
+       RowBox[{"1.`", " ", 
+        SuperscriptBox["c", "2"], " ", "rho"}], "+", 
+       RowBox[{"1.`", " ", "c", " ", "rho", " ", "u"}], "-", 
+       RowBox[{"0.5`", " ", "rho", " ", 
+        SuperscriptBox["u", "2"]}], "+", 
+       RowBox[{"0.5`", " ", 
+        SuperscriptBox["gama", "2"], " ", "rho", " ", 
+        SuperscriptBox["u", "2"]}]}]]}]}], "\[IndentingNewLine]", 
+   RowBox[{"v3", "=", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"0.5`", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "4.`"}], " ", "c", " ", "e", " ", "gama", " ", "u"}], 
+         "+", 
+         RowBox[{"4.`", " ", "c", " ", "e", " ", 
+          SuperscriptBox["gama", "2"], " ", "u"}], "-", 
+         RowBox[{"2.`", " ", "e", " ", "gama", " ", 
+          SuperscriptBox["u", "2"]}], "+", 
+         RowBox[{"4.`", " ", "e", " ", 
+          SuperscriptBox["gama", "2"], " ", 
+          SuperscriptBox["u", "2"]}], "-", 
+         RowBox[{"2.`", " ", "e", " ", 
+          SuperscriptBox["gama", "3"], " ", 
+          SuperscriptBox["u", "2"]}], "-", 
+         RowBox[{"4.`", " ", "c", " ", "rho", " ", 
+          SuperscriptBox["u", "3"]}], "+", 
+         RowBox[{"8.`", " ", "c", " ", "gama", " ", "rho", " ", 
+          SuperscriptBox["u", "3"]}], "-", 
+         RowBox[{"4.`", " ", "c", " ", 
+          SuperscriptBox["gama", "2"], " ", "rho", " ", 
+          SuperscriptBox["u", "3"]}], "+", 
+         RowBox[{"1.`", " ", "rho", " ", 
+          SuperscriptBox["u", "4"]}], "-", 
+         RowBox[{"1.`", " ", "gama", " ", "rho", " ", 
+          SuperscriptBox["u", "4"]}], "-", 
+         RowBox[{"1.`", " ", 
+          SuperscriptBox["gama", "2"], " ", "rho", " ", 
+          SuperscriptBox["u", "4"]}], "+", 
+         RowBox[{"1.`", " ", 
+          SuperscriptBox["gama", "3"], " ", "rho", " ", 
+          SuperscriptBox["u", "4"]}]}], ")"}]}], ")"}], "/", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "1.`"}], "+", "gama"}], ")"}], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"2.`", " ", "e", " ", "gama"}], "-", 
+         RowBox[{"2.`", " ", "e", " ", 
+          SuperscriptBox["gama", "2"]}], "+", 
+         RowBox[{"2.`", " ", 
+          SuperscriptBox["c", "2"], " ", "rho"}], "+", 
+         RowBox[{"2.`", " ", "c", " ", "rho", " ", "u"}], "-", 
+         RowBox[{"1.`", " ", "rho", " ", 
+          SuperscriptBox["u", "2"]}], "+", 
+         RowBox[{"1.`", " ", 
+          SuperscriptBox["gama", "2"], " ", "rho", " ", 
+          SuperscriptBox["u", "2"]}]}], ")"}]}], ")"}]}]}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"v2", "=", 
+    RowBox[{"Simplify", "[", "v2", "]"}]}], "\[IndentingNewLine]", 
+   RowBox[{"v3", "=", 
+    RowBox[{"Simplify", "[", "v3", "]"}]}], 
+   "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.6623177936310534`*^9, 3.662317869316414*^9}, {
+  3.6623180508138723`*^9, 3.66231813007044*^9}, {3.6623183524842544`*^9, 
+  3.6623183828230033`*^9}, {3.662318492993351*^9, 3.6623184974226065`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  FractionBox[
+   RowBox[{"0.5`", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", "1.6`"}], " ", "c", " ", "rho", " ", 
+       SuperscriptBox["u", "2"]}], "-", 
+      RowBox[{"0.9599999999999997`", " ", "rho", " ", 
+       SuperscriptBox["u", "3"]}], "+", 
+      RowBox[{"0.7999999999999998`", " ", "u", " ", 
+       RowBox[{"(", 
+        RowBox[{"H", "-", 
+         RowBox[{"0.5`", " ", 
+          SuperscriptBox["u", "2"]}]}], ")"}]}]}], ")"}]}], 
+   RowBox[{
+    RowBox[{"1.`", " ", 
+     SuperscriptBox["c", "2"], " ", "rho"}], "+", 
+    RowBox[{"1.`", " ", "c", " ", "rho", " ", "u"}], "+", 
+    RowBox[{"0.47999999999999987`", " ", "rho", " ", 
+     SuperscriptBox["u", "2"]}], "-", 
+    RowBox[{"0.3999999999999999`", " ", 
+     RowBox[{"(", 
+      RowBox[{"H", "-", 
+       RowBox[{"0.5`", " ", 
+        SuperscriptBox["u", "2"]}]}], ")"}]}]}]]}]], "Output",
+ CellChangeTimes->{
+  3.6623178276770144`*^9, 3.662317869912448*^9, {3.6623181019768205`*^9, 
+   3.6623181408320594`*^9}, {3.6623183741875052`*^9, 3.662318389236372*^9}, 
+   3.6623184988126864`*^9}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"1.2500000000000002`", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "0.6400000000000006`"}], " ", "c", " ", "rho", " ", 
+      SuperscriptBox["u", "3"]}], "+", 
+     RowBox[{"0.3839999999999999`", " ", "rho", " ", 
+      SuperscriptBox["u", "4"]}], "+", 
+     RowBox[{"1.5999999999999996`", " ", "c", " ", "u", " ", 
+      RowBox[{"(", 
+       RowBox[{"H", "-", 
+        RowBox[{"0.5`", " ", 
+         SuperscriptBox["u", "2"]}]}], ")"}]}], "-", 
+     RowBox[{"0.3199999999999994`", " ", 
+      SuperscriptBox["u", "2"], " ", 
+      RowBox[{"(", 
+       RowBox[{"H", "-", 
+        RowBox[{"0.5`", " ", 
+         SuperscriptBox["u", "2"]}]}], ")"}]}]}], ")"}]}], 
+  RowBox[{
+   RowBox[{"2.`", " ", 
+    SuperscriptBox["c", "2"], " ", "rho"}], "+", 
+   RowBox[{"2.`", " ", "c", " ", "rho", " ", "u"}], "+", 
+   RowBox[{"0.9599999999999997`", " ", "rho", " ", 
+    SuperscriptBox["u", "2"]}], "-", 
+   RowBox[{"0.7999999999999998`", " ", 
+    RowBox[{"(", 
+     RowBox[{"H", "-", 
+      RowBox[{"0.5`", " ", 
+       SuperscriptBox["u", "2"]}]}], ")"}]}]}]]], "Output",
+ CellChangeTimes->{
+  3.6623178276770144`*^9, 3.662317869912448*^9, {3.6623181019768205`*^9, 
+   3.6623181408320594`*^9}, {3.6623183741875052`*^9, 3.662318389236372*^9}, 
+   3.662318498816686*^9}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"u", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"1.`", " ", "H"}], "+", 
+     RowBox[{"u", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2.0000000000000004`"}], " ", "c", " ", "rho"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", "0.5`"}], "-", 
+           RowBox[{"1.1999999999999997`", " ", "rho"}]}], ")"}], " ", "u"}]}],
+        ")"}]}]}], ")"}]}], 
+  RowBox[{
+   RowBox[{"1.`", " ", "H"}], "-", 
+   RowBox[{"2.5000000000000004`", " ", 
+    SuperscriptBox["c", "2"], " ", "rho"}], "-", 
+   RowBox[{"2.5000000000000004`", " ", "c", " ", "rho", " ", "u"}], "+", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"-", "0.5`"}], "-", 
+      RowBox[{"1.2`", " ", "rho"}]}], ")"}], " ", 
+    SuperscriptBox["u", "2"]}]}]]], "Output",
+ CellChangeTimes->{
+  3.6623178276770144`*^9, 3.662317869912448*^9, {3.6623181019768205`*^9, 
+   3.6623181408320594`*^9}, {3.6623183741875052`*^9, 3.662318389236372*^9}, 
+   3.662318498818686*^9}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{"u", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"0.4999999999999991`", " ", "H", " ", "u"}], "+", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "0.24999999999999956`"}], "-", 
+        RowBox[{"0.6`", " ", "rho"}]}], ")"}], " ", 
+      SuperscriptBox["u", "3"]}], "+", 
+     RowBox[{"c", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"-", "2.5`"}], " ", "H"}], "+", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"1.25`", "\[VeryThinSpace]", "+", 
+           RowBox[{"1.000000000000001`", " ", "rho"}]}], ")"}], " ", 
+         SuperscriptBox["u", "2"]}]}], ")"}]}]}], ")"}]}], 
+  RowBox[{
+   RowBox[{"1.`", " ", "H"}], "-", 
+   RowBox[{"2.5000000000000004`", " ", 
+    SuperscriptBox["c", "2"], " ", "rho"}], "-", 
+   RowBox[{"2.5000000000000004`", " ", "c", " ", "rho", " ", "u"}], "+", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"-", "0.5`"}], "-", 
+      RowBox[{"1.2`", " ", "rho"}]}], ")"}], " ", 
+    SuperscriptBox["u", "2"]}]}]]], "Output",
+ CellChangeTimes->{
+  3.6623178276770144`*^9, 3.662317869912448*^9, {3.6623181019768205`*^9, 
+   3.6623181408320594`*^9}, {3.6623183741875052`*^9, 3.662318389236372*^9}, 
+   3.6623184988206863`*^9}]
+}, Open  ]]
+},
+WindowSize->{1024, 685},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"10.3 for Microsoft Windows (64-bit) (December 10, 2015)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 3995, 96, 245, "Input"],
+Cell[4578, 120, 1119, 30, 56, "Output"],
+Cell[5700, 152, 1324, 35, 56, "Output"],
+Cell[7027, 189, 1061, 31, 49, "Output"],
+Cell[8091, 222, 1274, 36, 86, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
